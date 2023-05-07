@@ -350,6 +350,18 @@ img {
   list-style: none;
 }
 
+/* styling in copyright  */
+.copyright {
+  justify-content: center;
+  padding: 20px;
+  background: #0067b8;
+}
+
+.copyright p {
+  font-size: 1rem;
+  color: white;
+}
+
 /* media query 768 px */
 
 @media screen and (max-width: 768px) {
@@ -432,6 +444,10 @@ img {
   /* styling in endrow */
   .endrow {
     flex-direction: column;
+  }
+  /* styling in copyright  */
+  .copyright p {
+    font-size: 0.8rem;
   }
 }
 
