@@ -1,0 +1,447 @@
+/* font import */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
+
+/* styling reset  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* end */
+
+/* utiliti class */
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+.center {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.p2 {
+  padding: 30px 0px 0px 20px;
+}
+
+/* styling in header  */
+
+.container {
+  box-shadow: 1px 5px 9px 2px rgb(211 212 212);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.925rem 3.25rem;
+}
+.main .left {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.main .left h2 {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.main .left p {
+  font-size: 13px;
+  line-height: 24px;
+  -webkit-text-size-adjust: 100%;
+}
+
+.main .left .p2 {
+  line-height: 5px;
+}
+
+.main .right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.link {
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.button {
+  font-size: 14px;
+  background-color: #0067b8;
+  color: white;
+  padding: 8px 50px;
+  border: none;
+  cursor: pointer;
+}
+
+/* end head  */
+
+/* styling in nav */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.nav .navleft,
+.navright {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navleft {
+  gap: 0.925rem;
+}
+
+.navleft .hide {
+  display: flex;
+  gap: 0.925rem;
+}
+
+.navleft img {
+  width: 20%;
+}
+
+.navleft li {
+  cursor: pointer;
+  color: #262626;
+  padding: 5px 0;
+  font-size: 15px;
+}
+
+.navleft li:hover {
+  border-bottom: 2px solid #000000;
+}
+
+.navright {
+  gap: 0.9rem;
+  cursor: pointer;
+}
+
+.ham {
+  display: none;
+}
+
+/* styling in home container  */
+.bg {
+  background: #cbe4fb;
+}
+.homecontainer {
+  padding: 1.25rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homecontainer .contentleft {
+  flex: 0.5;
+  padding: 0 30px;
+}
+
+.contentleft h2 {
+  font-size: 1.8125rem;
+  margin-bottom: 1rem;
+}
+
+.contentleft p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.contentleft .button2 {
+  cursor: pointer;
+  border: none;
+  background-color: #0067b8;
+  padding: 5px 15px;
+  color: white;
+  margin-right: 15px;
+}
+
+.contentleft .pmargin {
+  margin: 0;
+  cursor: pointer;
+  color: #0067b8;
+}
+
+.contentleft .pmargin:hover {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.homecontainer .contentright {
+  background: #cbe4fb;
+  flex: 0.5;
+}
+
+/* styling in small container  */
+.smallcontainer {
+  flex-wrap: wrap;
+  padding: 2.875rem 1.25rem;
+  justify-content: space-evenly;
+}
+.box {
+  gap: 0.625rem;
+  flex-direction: column;
+  padding: 0.625rem;
+}
+
+.box img {
+  width: 20%;
+}
+
+.box a {
+  font-weight: 500;
+  font-size: 15px;
+  color: #0067b8;
+  text-decoration: underline;
+}
+
+/* styling in gaming section  */
+
+.gamingsection {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card {
+  padding: 10px;
+}
+
+.card h2 {
+  padding: 10px 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.card p {
+  font-size: 0.8rem;
+  padding-bottom: 15px;
+}
+
+.card span {
+  font-size: 1rem;
+  color: #0067b8;
+}
+
+/* styling in banner section  */
+
+.banner {
+  background: #f2f2f2;
+}
+
+.banner_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 60vh;
+}
+
+.banner_card .bannercontent {
+  padding: 20px 0;
+  flex: 0.5;
+}
+
+.banner_card .bannercontent h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.banner_card .bannercontent p {
+  font-size: 15px;
+  padding-bottom: 15px;
+  width: 50%;
+}
+
+.banner_card .imgcontent {
+  flex: 0.5;
+}
+
+/* styling in socialmedia  */
+
+.socialmedia {
+  display: flex;
+  padding: 40px 20px;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.socialmedia p {
+  font-size: 1.1rem;
+}
+
+.socialmedia span {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.socialmedia span img {
+  width: 50%;
+}
+
+/* styling in footer section  */
+.footer__bg {
+  background-color: #f2f2f2;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding: 40px 20px;
+  gap: 1rem;
+  justify-items: self-start;
+}
+
+.footer .content1 {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer .content1 h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer .content1 li {
+  list-style: none;
+}
+
+.endrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 1rem;
+}
+
+.endrow .lang p {
+  margin-left: 10px;
+}
+
+.endrow_content {
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+/* media query 768 px */
+
+@media screen and (max-width: 768px) {
+  /* header  */
+  .container {
+    display: none;
+  }
+  .head {
+    display: none;
+  }
+
+  /* navigation  */
+
+  .navleft .hide {
+    display: none;
+  }
+  .navhide {
+    display: none;
+  }
+  .navleft img {
+    height: 30px;
+    width: 100%;
+  }
+  .ham {
+    display: block;
+  }
+
+  /* styling in home container  */
+  .bg {
+    background: transparent;
+  }
+  .homecontainer {
+    flex-direction: column-reverse;
+    background: transparent;
+  }
+  .homecontainer .contentleft {
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+  .homecontainer .contentright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .homecontainer .contentright img {
+    width: 70%;
+  }
+
+  /* styling in gaming container  */
+  .gamingsection {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* styling in banner  */
+
+  .banner_card {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .banner_card .bannercontent {
+    width: 100%;
+  }
+  .banner_card .bannercontent p {
+    width: 100%;
+  }
+
+  .banner_card .imgcontent {
+    width: 100%;
+  }
+
+  /* styling in socialmedia  */
+
+  .socialmedia {
+    flex-direction: column;
+  }
+
+  /* styling in endrow */
+  .endrow {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  /* home container  */
+  .contentleft p {
+    margin-bottom: 0.9rem;
+  }
+  /* styling in gaming container  */
+  .gamingsection {
+    grid-template-columns: 1fr;
+  }
+}
