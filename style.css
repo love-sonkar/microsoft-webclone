@@ -84,8 +84,8 @@ img {
 
 .main .left p {
   font-size: 13px;
-  line-height: 24px;
-  -webkit-text-size-adjust: 100%;
+  width: 80%;
+  padding-top: 5px;
 }
 
 .main .left .p2 {
@@ -111,6 +111,14 @@ img {
   padding: 8px 50px;
   border: none;
   cursor: pointer;
+}
+
+.cross {
+  cursor: pointer;
+}
+
+.none {
+  display: none;
 }
 
 /* end head  */
@@ -169,13 +177,12 @@ img {
 }
 .homecontainer {
   padding: 1.25rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .homecontainer .contentleft {
-  flex: 0.5;
   padding: 0 30px;
 }
 
@@ -211,8 +218,8 @@ img {
 }
 
 .homecontainer .contentright {
+  width: 100%;
   background: #cbe4fb;
-  flex: 0.5;
 }
 
 /* styling in small container  */
@@ -243,7 +250,7 @@ img {
 .gamingsection {
   padding: 20px 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .card {
   padding: 10px;
@@ -275,8 +282,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  height: 60vh;
+  padding: 40px 20px;
 }
 
 .banner_card .bannercontent {
@@ -413,31 +419,22 @@ img {
     background: transparent;
   }
   .homecontainer {
-    flex-direction: column-reverse;
     background: transparent;
   }
+  .homecontainer .contentleft {
+    grid-row: 2;
+  }
+
   .homecontainer .contentleft {
     padding: 20px;
     width: 100%;
     background-color: rgb(255, 255, 255);
   }
-  .homecontainer .contentright {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .homecontainer .contentright img {
     width: 70%;
   }
 
-  /* styling in gaming container  */
-  .gamingsection {
-    grid-template-columns: 1fr 1fr;
-  }
-
   /* styling in banner  */
-
   .banner_card {
     height: auto;
     flex-direction: column-reverse;
@@ -446,6 +443,7 @@ img {
   .banner_card .bannercontent {
     width: 100%;
   }
+
   .banner_card .bannercontent p {
     width: 100%;
   }
@@ -455,7 +453,6 @@ img {
   }
 
   /* styling in socialmedia  */
-
   .socialmedia {
     flex-direction: column;
   }
@@ -464,6 +461,7 @@ img {
   .endrow {
     flex-direction: column;
   }
+
   /* styling in copyright  */
   .copyright p {
     font-size: 0.8rem;
@@ -474,9 +472,5 @@ img {
   /* home container  */
   .contentleft p {
     margin-bottom: 0.9rem;
-  }
-  /* styling in gaming container  */
-  .gamingsection {
-    grid-template-columns: 1fr;
   }
 }

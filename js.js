@@ -1,5 +1,10 @@
 let backtotop = document.querySelector(".backtotop");
 let heightwindow = window.innerHeight;
+let cross = document.querySelector(".cross");
+
+cross.addEventListener("click", () => {
+  document.querySelector(".container").classList.add("none");
+});
 
 window.addEventListener("scroll", () => {
   if (
