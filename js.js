@@ -15,7 +15,7 @@ window.addEventListener("scroll", () => {
       if (backtotop.style.display === "block") {
         backtotop.style.display = "none";
       }
-    }, 4000);
+    }, 6000);
     backtotop.style.display = "block";
   } else {
     backtotop.style.display = "none";
